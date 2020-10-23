@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
 import "./about.scss"
 import Navbar from "../components/navbar"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Header from "../components/header"
+import Footer from "../components/footer"
+
 import { GlobalDispatchContext, GlobalStateContext, } from "../context/GlobalContextProvider"
 
 
