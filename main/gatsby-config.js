@@ -13,15 +13,6 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `docs`,
-        path: `${__dirname}/src/pages/components`,
-      },
-    },
 
     {
       resolve: "gatsby-plugin-page-creator",
