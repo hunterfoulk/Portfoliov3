@@ -1,0 +1,187 @@
+import React from "react"
+import aimpic from "../assets/aim3.jpg"
+import aimpic2 from "../assets/aim1.jpg"
+import aimpic3 from "../assets/aim4.jpg"
+import flyhostpic from "../assets/flyhost1.jpg"
+import flyhost2 from "../assets/flyhost22.jpg"
+import flyhost3 from "../assets/flyhost4.jpg"
+import flyhost4 from "../assets/flyhost5.jpg"
+import moviedb from "../assets/movieapp1.jpg"
+import moviedb2 from "../assets/movieapp2.jpg"
+import moviedb3 from "../assets/movieapp3.jpg"
+import board1 from "../assets/board1.jpg"
+import board2 from "../assets/board2.jpg"
+import board3 from "../assets/board3.jpg"
+import board4 from "../assets/board4.jpg"
+import neetchatpic from "../assets/neet3.jpg"
+import neetchatpic2 from "../assets/neetchat1.jpg"
+import neetchatpic3 from "../assets/neetchat2.jpg"
+import fashion1 from "../assets/fashion2.jpg"
+import fashion2 from "../assets/fashion3.jpg"
+import fashionpic from "../assets/fashion1.jpg"
+import youtubepic from "../assets/youtubepic2.jpg"
+import youtube2 from "../assets/youtubepic1.jpg"
+import youtube3 from "../assets/youtubepic3.jpg"
+
+export const GlobalStateContext = React.createContext()
+export const GlobalDispatchContext = React.createContext()
+
+
+const initialState = {
+    projects:
+
+        [
+            {
+                id: 0,
+                name: "Flyhost",
+                description: "File sharing and hosting platform to easily access and download desired files and folders uploaded to the web.",
+                summary: "FlyHost allows users to upload any type of file or folder of their choosing to quickly upload them to the cloud for other users to search and download them right from their computer using AWS S3 Bucket and AWS RDS.",
+                thumbnail: flyhostpic,
+                stack: ["React", "Typescript", "NodeJS", "MySQL"],
+                stackList: ["React", "Typescript", "Context API", "SCSS", "NodeJS", "Express", "AWS RDS", "AWS S3 Bucket", "MySQL"],
+                slides: [flyhost2, flyhostpic, flyhost3, flyhost4],
+                frontEnd: "I chose Create React App for the front-end of this project because I feel CRA is the easiest to setup big applications and has the highest scalability in front-end web development. I chose to implement Context API for scalable state management for the app I enjoy the very personal preference and freedom of design pattern and flow that context allows you to have when managing state across your whole app. I also chose SCSS for my styling library for cleaner styling files with its nesting and css function functionality.",
+                backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with and makes it extremely easy to work with the AWS-SDK package.",
+                database: "I chose MySQL for this application for the need of a more complex database design and structure with MySQL Workbench to hold and store user data while strongly keeping database normalization with the need for my database to be in third normal form.",
+                video: "https://www.youtube.com/watch?v=-PWKD_FZB6c",
+                sourcecode: "https://github.com/hunterfoulk/Flyhost"
+            },
+            {
+                id: 1,
+                name: "Companyboard",
+                description: "Desktop application for companies to create a company board for employee's to log in and join boards to collab and track progress and productivity.",
+                summary: "CompanyBoard is a desktop application built with Create React App and Electron. I chose to wrap the application in Electron and migrate to a more dekstop application because i felt it was more fitting for the style of the app and for a cleaner and better user experience. I decided on using AWS S3 bucket to store all the user profile pictures and board pictures for easy storage and fetching. ",
+                thumbnail: board3,
+                stack: ["React", "Javascript", "NodeJS", "MySQL"],
+                stackList: ["React", "Javascript", "Context API", "SCSS", "NodeJS", "Express", "AWS RDS", "AWS S3 Bucket", "MySQL"],
+                slides: [board1, board2, board3, board4],
+                frontEnd: "I also chose Create React App for the front-end of this project because I feel CRA is the easiest to setup big applications and has the highest scalability in front-end web development. I chose to implement Context API for scalable state management for the app I enjoy the very personal preference and freedom of design pattern and flow that context allows you to have when managing state across your whole app. I also chose SCSS for my styling library for cleaner styling files with its nesting and css function functionality.",
+                backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with. I also made good use of the AWS-SDK package for quick image uploads to the cloud for users to store their profile pictures and board pictures.",
+                database: "I chose MySQL for this application for the need of a more complex database design and structure with MySQL Workbench to hold and store user data while strongly keeping database normalization with the need for my database to be in third normal form.",
+                video: "https://www.youtube.com/watch?v=5kEnnTNx4Ww",
+                sourcecode: "https://github.com/hunterfoulk/CompanyBoard"
+
+            },
+            {
+                id: 2,
+                name: "NeetChat",
+                description: "Chat room application for users to create a room to chat and hangout in real time!",
+                summary: "NeetChat is a real time chat room application built using web sockets that allows users to caht and recieve messages in real time using the SocketIo client and server package.",
+                thumbnail: neetchatpic,
+                stack: ["React", "Javascript", "NodeJS", "SocketIO"],
+                stackList: ["React", "SCSS", "NodeJS", "Express", "SocketIO", "Web Sockets"],
+                slides: [neetchatpic2, neetchatpic3, neetchatpic],
+                frontEnd: "This applications Front-end was written in React for a simple and easy get up and going client side to build a responsive web chat for users to hangout in. I also used SocketIO's client package to communicate with the server via web sockets.",
+                backEnd: "I used NodeJS with Express with SocketIO an HTTP web socket package for instant chat and response capabilities for the client to interact with.",
+                database: "No Database or storage was used for this application.",
+                video: "https://www.youtube.com/watch?v=D9tu8Imj0NM",
+                sourcecode: "https://github.com/hunterfoulk/Neet-Chat"
+
+            },
+            {
+                id: 3,
+                name: "HuntUpload",
+                description: "Youtube experimental clone that allows users to sign up and log in to post videos and watch videos on the web quickly and easily and subscribe to their friends!",
+                summary: "File sharing and hosting platform to easily access and download desired files and folders uploaded to the web.",
+                thumbnail: youtubepic,
+                stack: ["React", "Typescript", "NodeJS", "PostgreSQL"],
+                stackList: ["React", "SCSS", "NodeJS", "Express", "SocketIO", "Web Sockets"],
+                slides: [youtube2, youtubepic, youtube3],
+                frontEnd: "This applications Front-end was written in React for a simple and easy get up and going client side to build a responsive web chat for users to hangout in. I also used SocketIO's client package to communicate with the server via web sockets.",
+                backEnd: "I used NodeJS with Express with SocketIO an HTTP web socket package for instant chat and response capabilities for the client to interact with.",
+                database: "No Database or storage was used for this application.",
+                video: "https://www.youtube.com/watch?v=hMmqQdF_1Pk",
+                sourcecode: "https://github.com/hunterfoulk/HuntUpload"
+
+            },
+
+            {
+                id: 4,
+                name: "Godspeed-fashion",
+                description: "Fashion brand e-commerce website template created with my personal favorite style of clothing brand design",
+                summary: "Godspeed E-commerce fashion website template written in Create React App. This template application also includes functiality such as searching for clothes by name or colothing color, seperate filters for womens and mens clothes and you are also given the option to filter by which clothing items you are looking to purchase along with a fully functional cart feature.",
+                thumbnail: fashionpic,
+                stack: ["React", "Javascript", "NodeJS", "MongoDB"],
+                stackList: ["React", "SCSS", "NodeJS", "Express", "Mongoose", "MongoDB"],
+                slides: [fashionpic, fashion1, fashion2],
+                frontEnd: "Godspeed-Fashions front end is written with Create React App with Context API for the updateable cart feature for users to add clothing items to their cart before checking out.",
+                backEnd: "I used NodeJS with Express for my backend of choice for this application for easy route managaemet and scheme management for my server to pull data from my MongoDB database.",
+                database: "I used MongoDB for this app because i found it of more use for simply fetching data for my front-end to display than using a relational database like SQL",
+                video: "https://www.youtube.com/watch?v=oNUo43lIc64",
+                sourcecode: "https://github.com/hunterfoulk/Flyhost"
+
+            },
+
+            {
+                id: 5,
+                name: "Aim-Training",
+                description: "First person shooter reflex and aim trainer for FPS players to warm up and improve their skills and potentially beat their highscores on the leaderboards!",
+                summary: "Aim-Training allows users to quickly hop in and warm up and train their FPS reflexes and reaction times before preparing for a match.",
+                thumbnail: aimpic,
+                stack: ["React", "Javascript", "NodeJS", "MongoDB"],
+                stackList: ["React", "CSS", "NodeJS", "Express", "Mongoose", "MongoDB"],
+                slides: [aimpic2, aimpic, aimpic3],
+                frontEnd: "I chose to also write Aim-Training in Create React App to make use of the very easy real time state management functionality needed for a fluent hit and miss counter with the setInterval generated targerts. ",
+                backEnd: "I also chose NodeJS and Express for this Aim-Training for the post to and update leaderboard functionality.",
+                database: "All of Aim-Trainings leaderboards scores are stored in a MongoDB database for easy fetching and storing of unrelational data",
+                video: "https://www.youtube.com/watch?v=hnAgJokz4RE",
+                sourcecode: "https://github.com/hunterfoulk/Aim-Training"
+
+            },
+
+            {
+                id: 6,
+                name: "MovieDB",
+                description: "Movie look up and review web application using the IMDB API to view movie reviews,ratings, and summarys.",
+                summary: "MovieDB is a quick and simple but great looking IMDB moving browsing app that I created with Create React App and Ant Design. The core features of the app are movie browsing and search functionality and you can checkout the movie reviews and ratings.",
+                thumbnail: moviedb,
+                stack: ["React", "Javascript", "CSS", "IMDB API"],
+                stackList: ["React", "CSS", "Ant Design", "IMDB API"],
+                slides: [moviedb3, moviedb2, moviedb],
+                frontEnd: "I built MovieDB with Create React App and the help of Ant Design a styled component libray for a great looking UI experience.",
+                backEnd: "I did not need the use of a server for this application",
+                database: "I fetched all of the movie data from the IMDB Api that they host free to use online with a big selection of movies to browse and make use of.",
+                video: "https://www.youtube.com/watch?v=0UxfSG-9Si0",
+                sourcecode: "https://github.com/hunterfoulk/MovieDB"
+
+            },
+        ],
+
+
+    frontend: ["React", "Redux", "Context API", "TypeScript", "NextJS", "Gatsby", "JavaScript", "HTML", "CSS", "SASS", "Material UI", "Bootstrap"],
+
+    backend: ["NodeJS", "Express", "JavaScript", "Serverless", "MVC", "SocketIO", "Knex", "Seqeuelize"],
+
+    database: ["SQL", "MySQL", "PostgreSQL", "MongoDB", "Data Structures", "Netlify", "AWS SDK", "AWS S3", "AWS RDS"],
+
+
+
+
+}
+
+
+function reducer(state, action) {
+    switch (action.type) {
+        case "ROUTE_PROJECT": {
+            return {
+                ...state,
+                projects: state.projects,
+            }
+        }
+        default:
+            throw new Error("Bad Action Type")
+    }
+}
+
+const GlobalContextProvider = ({ children }) => {
+    const [state, dispatch] = React.useReducer(reducer, initialState)
+    return (
+        <GlobalStateContext.Provider value={state}>
+            <GlobalDispatchContext.Provider value={dispatch}>
+                {children}
+            </GlobalDispatchContext.Provider>
+        </GlobalStateContext.Provider>
+    )
+}
+
+export default GlobalContextProvider

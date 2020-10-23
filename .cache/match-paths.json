@@ -1,0 +1,6 @@
+[
+    {
+        "path": "/projects/",
+        "matchPath": "/projects/*"
+    }
+]
