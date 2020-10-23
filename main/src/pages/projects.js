@@ -28,8 +28,14 @@ export const Projects = ({ id }) => {
     const [project, setProject] = useState({})
     const [items, setItems] = useState([])
     const [stack, setStack] = useState([])
-    let isMobile = window.innerWidth <= 800;
 
+
+    const [isMobile, conclusion] = useState(false)
+
+    useEffect(() => {
+        const isMobile = window.innerWidth < 800
+        conclusion(isMobile)
+    }, [])
 
     useEffect(() => {
         console.log("state projects", state.projects)

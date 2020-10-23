@@ -5,8 +5,16 @@ import { Router, Link } from "@reach/router"
 
 
 export default function Navbar() {
-    let isMobile = window.innerWidth <= 700;
+
     const [dropdown, setDropdown] = useState(false)
+
+
+    const [isMobile, conclusion] = useState(false)
+
+    useEffect(() => {
+        const isMobile = window.innerWidth < 700
+        conclusion(isMobile)
+    }, [])
 
     const fullPath = window.location.pathname;
     console.log("this is the full Path", fullPath)
