@@ -8,17 +8,16 @@ import { Link } from "gatsby"
 export default function Navbar() {
 
     const [dropdown, setDropdown] = useState(false)
-
-
     const [isMobile, conclusion] = useState(false)
+    const [newPath, setNewpath] = useState("")
 
     useEffect(() => {
         const isMobile = window.innerWidth < 700
         conclusion(isMobile)
+        const fullPath = window.location.pathname;
+        setNewpath(fullPath)
     }, [])
 
-    const fullPath = window.location.pathname;
-    console.log("this is the full Path", fullPath)
 
 
 
@@ -48,7 +47,7 @@ export default function Navbar() {
                     <span>About</span>
                 </Link>
 
-                    {fullPath === "/" ? <span onClick={() => {
+                    {newPath === "/" ? <span onClick={() => {
                         window.scrollTo(740, 740);
                     }}>Projects</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
                             <span>Projects</span>
