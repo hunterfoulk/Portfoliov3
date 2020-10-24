@@ -85,7 +85,7 @@ const IndexPage = () => {
                       <p>{project.description}</p>
                     </div>
                     <div className="view-project-container">
-                      <Link style={{ textDecoration: "none" }} to={`/projects/${project.id}`}>
+                      <Link style={{ textDecoration: "none" }} to={`/projects/${project.id}/`}>
                         <span>View Project</span>
 
                       </Link>
