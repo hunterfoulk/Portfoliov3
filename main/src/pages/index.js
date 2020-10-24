@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import Fade from 'react-reveal/Fade';
-import { Router, Link } from "@reach/router"
+// import { Router, Link } from "@reach/router"
+import { Link } from "gatsby"
 import Layout from "../components/layouts/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
