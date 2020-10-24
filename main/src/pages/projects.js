@@ -28,9 +28,8 @@ export const Projects = ({ id }) => {
     const [project, setProject] = useState({})
     const [items, setItems] = useState([])
     const [stack, setStack] = useState([])
-
-
     const [isMobile, conclusion] = useState(false)
+
 
     useEffect(() => {
         const isMobile = window.innerWidth < 800

@@ -17,7 +17,7 @@ const IndexPage = () => {
   const dispatch = useContext(GlobalDispatchContext)
   const state = useContext(GlobalStateContext)
 
-
+  if (process.env.NODE_ENV === 'production') console.log = () => { }
   return (
     <>
       <Layout>
