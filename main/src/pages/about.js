@@ -12,7 +12,7 @@ import { GlobalDispatchContext, GlobalStateContext, } from "../context/GlobalCon
 export default function About() {
     const state = useContext(GlobalStateContext)
 
-    console.log("this is the front-end", state.frontend)
+
 
     return (
 
