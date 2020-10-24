@@ -3,7 +3,6 @@ import "./about.scss"
 import Navbar from "../components/navbar"
 import Header from "../components/header"
 import Footer from "../components/footer"
-
 import { GlobalDispatchContext, GlobalStateContext, } from "../context/GlobalContextProvider"
 
 
