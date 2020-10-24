@@ -4,6 +4,7 @@ module.exports = {
     description: `Personal Portfolio`,
     author: `@gatsbyjs`,
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -13,7 +14,7 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
-
+    `gatsby-plugin-netlify`,
 
     {
       resolve: "gatsby-plugin-page-creator",
