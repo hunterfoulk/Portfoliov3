@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
-    description: `Portfolio Component / toolkit Documentation`,
+    description: `Portfolio Component`,
     author: `@gatsbyjs`,
   },
   plugins: [
