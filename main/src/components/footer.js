@@ -68,9 +68,13 @@ export default function Footer() {
                     <div className="footer-left-bottom">
                         <h1>Follow me at</h1>
                         <div>
-                            <span><FaGithub /></span>
-                            <span><FaYoutube /></span>
-                            <span><FaLinkedin /></span>
+                            <a target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://github.com/hunterfoulk"><FaGithub /></a>
+                            <a target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.youtube.com/channel/UCPA_sNlX4p4TgYr6HQFqbJA/videos"><FaYoutube /></a>
+                            <a><FaLinkedin /></a>
                         </div>
                     </div>
                 </div>
