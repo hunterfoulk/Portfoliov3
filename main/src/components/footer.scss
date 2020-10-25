@@ -47,6 +47,7 @@
   .footer-content-container {
     display: flex;
     width: 65%;
+    max-width: 1350px;
     margin-top: 60px;
     margin-bottom: 60px;
     .footer-left {
@@ -147,6 +148,7 @@
     justify-content: space-between;
     // background-color: rgb(99, 128, 99);
     width: 65%;
+    max-width: 1350px;
     border-top: 1px solid #23272a;
     padding: 12px 0px;
     margin-bottom: 15px;

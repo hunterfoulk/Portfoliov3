@@ -144,8 +144,12 @@ export const Projects = ({ id }) => {
 
                         <h1>Source Code</h1>
                         <div className="button-container">
-                            <button><FaGithub /></button>
-                            <button style={{ color: "#FF0000" }}><FaYoutube /></button>
+                            <a target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://github.com/hunterfoulk" style={{ color: "black" }}><FaGithub /></a>
+                            <a target="_blank"
+                                rel="noopener noreferrer"
+                                href={project.video} style={{ color: "#FF0000" }}><FaYoutube /></a>
                         </div>
 
                     </div>

@@ -86,6 +86,7 @@
         flex-direction: column;
         justify-content: space-between;
         width: 70%;
+        max-width: 1350px;
         background-color: rgb(218, 218, 218);
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -187,6 +188,7 @@
   .slider {
     display: flex;
     width: 70%;
+    max-width: 1350px;
     height: 400px;
     // background-color: rgb(139, 107, 107);
     padding: 0px 10px;
@@ -269,8 +271,9 @@
     .project-detail-header {
       display: flex;
       flex-direction: column;
-      //   background-color: red;
+      // background-color: red;
       width: 70%;
+      max-width: 1350px;
       margin-top: 60px;
       margin-bottom: 100px;
       h1 {
@@ -287,6 +290,7 @@
       display: flex;
       flex-direction: column;
       width: 70%;
+      max-width: 1350px;
       //   background-color: green;
       margin-bottom: 100px;
 
@@ -298,6 +302,7 @@
         display: flex;
         flex-direction: row;
         width: 70%;
+        max-width: 1350px;
         // background-color: yellow;
         margin-top: 20px;
         flex-wrap: wrap;
@@ -322,6 +327,7 @@
       display: flex;
       flex-direction: column;
       width: 70%;
+      max-width: 1350px;
       //   background-color: green;
       margin-bottom: 65px;
       h1 {
@@ -336,6 +342,8 @@
       display: flex;
       flex-direction: column;
       width: 70%;
+      max-width: 1350px;
+
       //   background-color: green;
       margin-bottom: 65px;
 
@@ -351,6 +359,8 @@
       display: flex;
       flex-direction: column;
       width: 70%;
+      max-width: 1350px;
+
       //   background-color: green;
       h1 {
         color: #2c2f33;
@@ -364,12 +374,13 @@
       display: flex;
       flex-direction: column;
       width: 70%;
+      max-width: 1350px;
       // background-color: yellow;
       margin-top: 40px;
       .button-container {
         display: flex;
         margin-top: 15px;
-        button {
+        a {
           display: flex;
           align-items: center;
           font-size: 22px;
