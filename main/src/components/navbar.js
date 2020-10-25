@@ -33,6 +33,10 @@ export default function Navbar() {
                     <span>Projects</span>
                 </Link>
 
+                <Link style={{ textDecoration: "none", outline: "none", color: "#7289da" }} to="/">
+                    <span>Contact</span>
+                </Link>
+
                 <span>Resume</span>
             </div>}
             <div className="nav-left">
@@ -51,6 +55,12 @@ export default function Navbar() {
                         window.scrollTo(740, 740);
                     }}>Projects</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
                             <span>Projects</span>
+                        </Link>}
+
+                    {newPath === "/" ? <span onClick={() => {
+                        window.scrollTo(2830, 2830);
+                    }}>Contact</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
+                            <span>Contact</span>
                         </Link>}
 
                     <span>Resume</span> </>}
