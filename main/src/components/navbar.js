@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import "./navbar.scss"
 import Layout from "../components/layouts/layout"
 // import { Router, Link } from "@reach/router"
 import { Link } from "gatsby"
+import useClickOutside from "../components/useClickOutside"
 
 
 export default function Navbar() {
@@ -10,6 +11,8 @@ export default function Navbar() {
     const [dropdown, setDropdown] = useState(false)
     const [isMobile, conclusion] = useState(false)
     const [newPath, setNewpath] = useState("")
+    const ref = useRef();
+    useClickOutside(ref, () => setDropdown(false));
 
     useEffect(() => {
         const isMobile = window.innerWidth < 700
@@ -24,7 +27,7 @@ export default function Navbar() {
     return (
 
         <div className="navbar">
-            {dropdown && <div className="dropdown">
+            {dropdown && <div className="dropdown" ref={ref}>
                 <Link style={{ textDecoration: "none", outline: "none", color: "#7289da" }} to="/about">
                     <span>About</span>
                 </Link>
