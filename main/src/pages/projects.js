@@ -12,6 +12,7 @@ import Navbar from "../components/navbar"
 import ReactPlayer from 'react-player'
 import { FaGithub } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
+import { FaDesktop } from 'react-icons/fa';
 
 
 const Router = () => {
@@ -150,6 +151,11 @@ export const Projects = ({ id }) => {
                             <a target="_blank"
                                 rel="noopener noreferrer"
                                 href={project.video} style={{ color: "#FF0000" }}><FaYoutube /></a>
+
+                            {project.demolink !== "" ? <a target="_blank"
+                                rel="noopener noreferrer"
+                                href={project.demolink} style={{ color: "#7289da", fontSize: "15px", textDecoration: "none", fontWeight: "bold" }}>Demo</a> : null}
+
                         </div>
 
                     </div>

@@ -22,6 +22,10 @@ import fashionpic from "../assets/fashion1.jpg"
 import youtubepic from "../assets/youtubepic2.jpg"
 import youtube2 from "../assets/youtubepic1.jpg"
 import youtube3 from "../assets/youtubepic3.jpg"
+import fly1 from "../assets/fly1.jpg"
+import fly2 from "../assets/fly2.jpg"
+import fly3 from "../assets/fly3.jpg"
+import fly4 from "../assets/fly4.jpg"
 
 export const GlobalStateContext = React.createContext()
 export const GlobalDispatchContext = React.createContext()
@@ -33,6 +37,22 @@ const initialState = {
         [
             {
                 id: 0,
+                name: "FlyChat",
+                description: "Real time video watching and live chat application for users to create and join a room to watch youtube videos together in sync and chat in real time.",
+                summary: "FlyChat is a website created with Create React App, NodeJS, and SocketIO for users to create and join rooms to watch videos together and chat in real time together. ",
+                thumbnail: fly1,
+                stack: ["React", "Javascript", "NodeJS", "SocketIO"],
+                stackList: ["React", "JavaScript", "Context API", "SCSS", "NodeJS", "Express", "SocketIO", "Heroku"],
+                slides: [fly1, fly2, fly3, fly4],
+                frontEnd: "I chose Create React App for the front-end of this project because I feel CRA is the easiest to setup big applications and has the highest scalability in front-end web development. I chose to implement Context API for scalable state management for the app I enjoy the very personal preference and freedom of design pattern and flow that context allows you to have when managing state across your whole app. I also chose SCSS for my styling library for cleaner styling files with its nesting and css function functionality.",
+                backEnd: "I chose to use NodeJS for this application for the use of the socketIO library for the functionality of real time chatting using websockets.",
+                database: "No database was used for this application.",
+                video: "https://www.youtube.com/watch?v=dI_V61cIm7o",
+                sourcecode: "https://github.com/hunterfoulk/flychat",
+                demolink: "https://flychat.netlify.app/"
+            },
+            {
+                id: 1,
                 name: "Flyhost",
                 description: "File sharing and hosting platform to easily access and download desired files and folders uploaded to the web.",
                 summary: "FlyHost allows users to upload any type of file or folder of their choosing to quickly upload them to the cloud for other users to search and download them right from their computer using AWS S3 Bucket and AWS RDS.",
@@ -44,10 +64,12 @@ const initialState = {
                 backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with and makes it extremely easy to work with the AWS-SDK package.",
                 database: "I chose MySQL for this application for the need of a more complex database design and structure with MySQL Workbench to hold and store user data while strongly keeping database normalization with the need for my database to be in third normal form.",
                 video: "https://www.youtube.com/watch?v=-PWKD_FZB6c",
-                sourcecode: "https://github.com/hunterfoulk/Flyhost"
+                sourcecode: "https://github.com/hunterfoulk/Flyhost",
+                demolink: ""
+
             },
             {
-                id: 1,
+                id: 2,
                 name: "Companyboard",
                 description: "Desktop application for companies to create a company board for employee's to log in and join boards to collab and track progress and productivity.",
                 summary: "CompanyBoard is a desktop application built with Create React App and Electron. I chose to wrap the application in Electron and migrate to a more dekstop application because i felt it was more fitting for the style of the app and for a cleaner and better user experience. I decided on using AWS S3 bucket to store all the user profile pictures and board pictures for easy storage and fetching. ",
@@ -59,11 +81,13 @@ const initialState = {
                 backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with. I also made good use of the AWS-SDK package for quick image uploads to the cloud for users to store their profile pictures and board pictures.",
                 database: "I chose MySQL for this application for the need of a more complex database design and structure with MySQL Workbench to hold and store user data while strongly keeping database normalization with the need for my database to be in third normal form.",
                 video: "https://www.youtube.com/watch?v=5kEnnTNx4Ww",
-                sourcecode: "https://github.com/hunterfoulk/CompanyBoard"
+                sourcecode: "https://github.com/hunterfoulk/CompanyBoard",
+                demolink: ""
+
 
             },
             {
-                id: 2,
+                id: 3,
                 name: "NeetChat",
                 description: "Chat room application for users to create a room to chat and hangout in real time!",
                 summary: "NeetChat is a real time chat room application built using web sockets that allows users to caht and recieve messages in real time using the SocketIo client and server package.",
@@ -75,11 +99,12 @@ const initialState = {
                 backEnd: "I used NodeJS with Express with SocketIO an HTTP web socket package for instant chat and response capabilities for the client to interact with.",
                 database: "No Database or storage was used for this application.",
                 video: "https://www.youtube.com/watch?v=D9tu8Imj0NM",
-                sourcecode: "https://github.com/hunterfoulk/Neet-Chat"
+                sourcecode: "https://github.com/hunterfoulk/Neet-Chat",
+                demolink: ""
 
             },
             {
-                id: 3,
+                id: 4,
                 name: "HuntUpload",
                 description: "Youtube experimental clone that allows users to sign up and log in to post videos and watch videos on the web quickly and easily and subscribe to their friends!",
                 summary: "File sharing and hosting platform to easily access and download desired files and folders uploaded to the web.",
@@ -91,12 +116,13 @@ const initialState = {
                 backEnd: "I used NodeJS with Express with SocketIO an HTTP web socket package for instant chat and response capabilities for the client to interact with.",
                 database: "No Database or storage was used for this application.",
                 video: "https://www.youtube.com/watch?v=hMmqQdF_1Pk",
-                sourcecode: "https://github.com/hunterfoulk/HuntUpload"
+                sourcecode: "https://github.com/hunterfoulk/HuntUpload",
+                demolink: ""
 
             },
 
             {
-                id: 4,
+                id: 5,
                 name: "Godspeed-fashion",
                 description: "Fashion brand e-commerce website template created with my personal favorite style of clothing brand design",
                 summary: "Godspeed E-commerce fashion website template written in Create React App. This template application also includes functiality such as searching for clothes by name or colothing color, seperate filters for womens and mens clothes and you are also given the option to filter by which clothing items you are looking to purchase along with a fully functional cart feature.",
@@ -108,12 +134,13 @@ const initialState = {
                 backEnd: "I used NodeJS with Express for my backend of choice for this application for easy route managaemet and scheme management for my server to pull data from my MongoDB database.",
                 database: "I used MongoDB for this app because i found it of more use for simply fetching data for my front-end to display than using a relational database like SQL",
                 video: "https://www.youtube.com/watch?v=oNUo43lIc64",
-                sourcecode: "https://github.com/hunterfoulk/Flyhost"
+                sourcecode: "https://github.com/hunterfoulk/Flyhost",
+                demolink: ""
 
             },
 
             {
-                id: 5,
+                id: 6,
                 name: "Aim-Training",
                 description: "First person shooter reflex and aim trainer for FPS players to warm up and improve their skills and potentially beat their highscores on the leaderboards!",
                 summary: "Aim-Training allows users to quickly hop in and warm up and train their FPS reflexes and reaction times before preparing for a match.",
@@ -125,12 +152,13 @@ const initialState = {
                 backEnd: "I also chose NodeJS and Express for this Aim-Training for the post to and update leaderboard functionality.",
                 database: "All of Aim-Trainings leaderboards scores are stored in a MongoDB database for easy fetching and storing of unrelational data",
                 video: "https://www.youtube.com/watch?v=hnAgJokz4RE",
-                sourcecode: "https://github.com/hunterfoulk/Aim-Training"
+                sourcecode: "https://github.com/hunterfoulk/Aim-Training",
+                demolink: ""
 
             },
 
             {
-                id: 6,
+                id: 7,
                 name: "MovieDB",
                 description: "Movie look up and review web application using the IMDB API to view movie reviews,ratings, and summarys.",
                 summary: "MovieDB is a quick and simple but great looking IMDB moving browsing app that I created with Create React App and Ant Design. The core features of the app are movie browsing and search functionality and you can checkout the movie reviews and ratings.",
@@ -142,7 +170,8 @@ const initialState = {
                 backEnd: "I did not need the use of a server for this application",
                 database: "I fetched all of the movie data from the IMDB Api that they host free to use online with a big selection of movies to browse and make use of.",
                 video: "https://www.youtube.com/watch?v=0UxfSG-9Si0",
-                sourcecode: "https://github.com/hunterfoulk/MovieDB"
+                sourcecode: "https://github.com/hunterfoulk/MovieDB",
+                demolink: ""
 
             },
         ],
