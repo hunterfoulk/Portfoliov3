@@ -1,6 +1,9 @@
 import React from 'react'
 import "./header.scss"
 import Layout from "../components/layouts/layout"
+import svgPic from "../assets/portsvg.svg"
+
+
 export default function Header() {
     return (
 
@@ -10,7 +13,9 @@ export default function Header() {
                 <span>I'm a Software Developer specialized in front end and back end development and has a passion for developing complex scalable web apps.</span>
             </div>
             <div className="header-right">
-                <div className="image-container"></div>
+                <div className="image-container">
+                    <img src={svgPic} />
+                </div>
             </div>
         </div>
 

@@ -12,7 +12,6 @@ import Navbar from "../components/navbar"
 import ReactPlayer from 'react-player'
 import { FaGithub } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
-import { FaDesktop } from 'react-icons/fa';
 
 
 const Router = () => {

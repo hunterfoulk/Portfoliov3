@@ -1,7 +1,9 @@
 .header-container {
   display: flex;
-  //   background-color: green;
-  margin: 120px 0px;
+  // background-color: green;
+  // margin: 150px 0px;
+  margin-top: 160px;
+  margin-bottom: 50px;
   width: 65%;
   max-width: 1350px;
 
@@ -27,9 +29,16 @@
     width: 50%;
     // background-color: orange;
     .image-container {
-      width: 260px;
-      height: 230px;
-      background-color: #2c2f33;
+      width: 470px;
+      // height: 230px;
+      // background-color: #2c2f33;
+      img {
+        // height: 100%;
+        width: 100%;
+        margin-left: 20px;
+        position: relative;
+        bottom: 10px;
+      }
     }
   }
 }
@@ -40,7 +49,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .header-container {
     width: 90%;
     // background-color: rgb(117, 117, 78);
