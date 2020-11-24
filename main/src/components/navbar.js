@@ -61,7 +61,7 @@ export default function Navbar() {
                         </Link>}
 
                     {newPath === "/" ? <span onClick={() => {
-                        window.scrollTo(2830, 2830);
+                        window.scrollTo(3330, 3330);
                     }}>Contact</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
                             <span>Contact</span>
                         </Link>}
