@@ -11,7 +11,6 @@ export default function Navbar() {
     const [dropdown, setDropdown] = useState(false)
     const [isMobile, conclusion] = useState(false)
     const [newPath, setNewpath] = useState("")
-    const [resumeModal, setResumeModal] = useState(false)
     const ref = useRef();
     useClickOutside(ref, () => setDropdown(false));
 
@@ -70,12 +69,7 @@ export default function Navbar() {
                     <span onClick={() => {
                         window.open('https://airbnbbucket.s3.us-east-2.amazonaws.com/Resume.pdf')
                     }}>Resume</span>
-                    {/* <span onClick={() => setResumeModal(true)}>Resume</span> */}
 
-                    {/* {resumeModal && <div>
-                        <embed src="path_of_your_pdf/your_pdf_file.pdf" type="application/pdf" height="700px" width="500">
-
-                    </div>} */}
                 </>
 
                 }
