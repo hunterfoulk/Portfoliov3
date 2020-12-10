@@ -74,7 +74,9 @@ export default function Footer() {
                             <a target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://www.youtube.com/channel/UCPA_sNlX4p4TgYr6HQFqbJA/videos"><FaYoutube /></a>
-                            <a><FaLinkedin /></a>
+                            <a target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.linkedin.com/in/hunterfoulk/"><FaLinkedin /></a>
                         </div>
                     </div>
                 </div>
