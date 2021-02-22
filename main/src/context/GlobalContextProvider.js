@@ -26,6 +26,9 @@ import fly1 from "../assets/fly1.jpg"
 import fly2 from "../assets/fly2.jpg"
 import fly3 from "../assets/fly3.jpg"
 import fly4 from "../assets/fly4.jpg"
+import spring1 from "../assets/spring1.jpg"
+import spring2 from "../assets/spring2.jpg"
+import spring3 from "../assets/spring3.jpg"
 
 export const GlobalStateContext = React.createContext()
 export const GlobalDispatchContext = React.createContext()
@@ -37,6 +40,22 @@ const initialState = {
         [
             {
                 id: 0,
+                name: "Springboards",
+                description: "Springboards is a collection of anonymous discussion and conversation boards with a wide range of varying topics and insightful information from around the world.",
+                summary: "Springboards is a collection of anonymous discussion and conversation boards with a wide range of varying topics and insightful information from around the world. Springboards is created with Create React App by facebook, NodeJS, PostgreSQL, and Azure Cloud Platform.",
+                thumbnail: spring1,
+                stack: ["React", "Typescript", "NodeJS", "PostgreSQL"],
+                stackList: ["React", "Typescript", "Context API", "SCSS", "NodeJS", "Express", "Azure", "PostgreSQL", "Heroku", "Netlify"],
+                slides: [spring1, spring2, spring3],
+                frontEnd: "Create React App is my go to for creating scalable web applications and websites. I chose to stick with Reacts own Context API for fluent and clean state management and reuseable code. ",
+                backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with and makes it extremely easy to work with the AWS-SDK package.",
+                database: "I chose PostgreSQL to configure and store Springboards data while being hosted through a Azure PostgreSQL instance.",
+                video: "https://www.youtube.com/watch?v=-PWKD_FZB6c",
+                sourcecode: "https://github.com/hunterfoulk/springboard-client",
+                demolink: "https://springboards.netlify.app/"
+            },
+            {
+                id: 1,
                 name: "FlyChat",
                 description: "Real time video watching and live chat application for users to create and join a room to watch youtube videos together in sync and chat in real time.",
                 summary: "FlyChat is a website created with Create React App, NodeJS, and SocketIO for users to create and join rooms to watch videos together and chat in real time together. ",
@@ -52,7 +71,7 @@ const initialState = {
                 demolink: "https://flychat.netlify.app/"
             },
             {
-                id: 1,
+                id: 2,
                 name: "Flyhost",
                 description: "File sharing and hosting platform to easily access and download desired files and folders uploaded to the web.",
                 summary: "FlyHost allows users to upload any type of file or folder of their choosing to quickly upload them to the cloud for other users to search and download them right from their computer using AWS S3 Bucket and AWS RDS.",
@@ -69,7 +88,7 @@ const initialState = {
 
             },
             {
-                id: 2,
+                id: 3,
                 name: "Companyboard",
                 description: "Desktop application for companies to create a company board for employee's to log in and join boards to collab and track progress and productivity.",
                 summary: "CompanyBoard is a desktop application built with Create React App and Electron. I chose to wrap the application in Electron and migrate to a more dekstop application because i felt it was more fitting for the style of the app and for a cleaner and better user experience. I decided on using AWS S3 bucket to store all the user profile pictures and board pictures for easy storage and fetching. ",
@@ -87,7 +106,7 @@ const initialState = {
 
             },
             {
-                id: 3,
+                id: 4,
                 name: "NeetChat",
                 description: "Chat room application for users to create a room to chat and hangout in real time!",
                 summary: "NeetChat is a real time chat room application built using web sockets that allows users to caht and recieve messages in real time using the SocketIo client and server package.",
@@ -104,7 +123,7 @@ const initialState = {
 
             },
             {
-                id: 4,
+                id: 5,
                 name: "HuntUpload",
                 description: "Youtube experimental clone that allows users to sign up and log in to post videos and watch videos on the web quickly and easily and subscribe to their friends!",
                 summary: "File sharing and hosting platform to easily access and download desired files and folders uploaded to the web.",
@@ -122,7 +141,7 @@ const initialState = {
             },
 
             {
-                id: 5,
+                id: 6,
                 name: "Godspeed-fashion",
                 description: "Fashion brand e-commerce website template created with my personal favorite style of clothing brand design",
                 summary: "Godspeed E-commerce fashion website template written in Create React App. This template application also includes functiality such as searching for clothes by name or colothing color, seperate filters for womens and mens clothes and you are also given the option to filter by which clothing items you are looking to purchase along with a fully functional cart feature.",
@@ -140,7 +159,7 @@ const initialState = {
             },
 
             {
-                id: 6,
+                id: 7,
                 name: "Aim-Training",
                 description: "First person shooter reflex and aim trainer for FPS players to warm up and improve their skills and potentially beat their highscores on the leaderboards!",
                 summary: "Aim-Training allows users to quickly hop in and warm up and train their FPS reflexes and reaction times before preparing for a match.",
@@ -158,7 +177,7 @@ const initialState = {
             },
 
             {
-                id: 7,
+                id: 8,
                 name: "MovieDB",
                 description: "Movie look up and review web application using the IMDB API to view movie reviews,ratings, and summarys.",
                 summary: "MovieDB is a quick and simple but great looking IMDB moving browsing app that I created with Create React App and Ant Design. The core features of the app are movie browsing and search functionality and you can checkout the movie reviews and ratings.",

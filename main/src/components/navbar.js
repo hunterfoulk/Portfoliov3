@@ -4,13 +4,48 @@ import Layout from "../components/layouts/layout"
 // import { Router, Link } from "@reach/router"
 import { Link } from "gatsby"
 import useClickOutside from "../components/useClickOutside"
+import { makeStyles } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+
+const useStyles = makeStyles({
+    list: {
+        width: "220px",
+        display: "flex",
+
+        backgroundColor: "rgb(248, 248, 248)",
 
 
+    },
+    fullList: {
+        width: '220px',
+        display: "flex",
+        backgroundColor: "rgb(248, 248, 248)",
+        background: "rgb(248, 248, 248)",
+        // padding: "5px",
+        marginLeft: "5px",
+        marginTop: "5px"
+
+    },
+    paper: {
+        background: "rgb(248, 248, 248)",
+        width: "200px",
+        display: "flex",
+        alignItems: "center",
+        padding: "10px"
+        // borderRight: "4px solid rgb(215, 46, 51)"
+
+    },
+    links: {
+        marginBottom: "10px"
+    }
+
+});
 export default function Navbar() {
-
+    const classes = useStyles();
     const [dropdown, setDropdown] = useState(false)
     const [isMobile, conclusion] = useState(false)
     const [newPath, setNewpath] = useState("")
+    const [open, setOpen] = useState(false)
     const ref = useRef();
     useClickOutside(ref, () => setDropdown(false));
 
@@ -27,30 +62,51 @@ export default function Navbar() {
     return (
 
         <div className="navbar">
-            {dropdown && <div className="dropdown" ref={ref}>
-                <Link style={{ textDecoration: "none", outline: "none", color: "#7289da" }} to="/about">
-                    <span>About</span>
-                </Link>
 
-                <Link style={{ textDecoration: "none", outline: "none", color: "#7289da" }} to="/">
-                    <span>Projects</span>
-                </Link>
-
-                <Link style={{ textDecoration: "none", outline: "none", color: "#7289da" }} to="/">
-                    <span>Contact</span>
-                </Link>
-
-                <span>Resume</span>
-            </div>}
             <div className="nav-left">
-                <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
+                {isMobile ? <span style={{ fontSize: "32px" }} className="hamburger" onClick={() => setOpen(true)}>☰</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
                     <span>Hunter Foulk</span>
-                </Link>
+                </Link>}
 
+                <React.Fragment >
+
+                    <Drawer classes={{ paper: classes.paper }} anchor="left" open={open} onClose={() => setOpen(false)}>
+
+                        {newPath === "/" ? <span style={{ marginBottom: "20px", fontSize: "20px" }} onClick={() => {
+                            window.scrollTo(0, 0)
+                            setOpen(false);
+                        }}>Home</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
+                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>Home</span>
+                            </Link>}
+
+
+
+                        {newPath === "/" ? <span style={{ marginBottom: "20px", fontSize: "20px" }} onClick={() => {
+                            window.scrollTo(730, 730)
+                            setOpen(false);
+                        }}>Projects</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
+                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>Projects</span>
+                            </Link>}
+
+                        {newPath === "/" ? <span style={{ marginBottom: "20px", fontSize: "20px" }} onClick={() => {
+                            window.scrollTo(5750, 5750);
+                            setOpen(false);
+
+                        }}>Contact</span> : <Link style={{ textDecoration: "none", outline: "none", color: "red", fontSize: "30px" }} to="/">
+                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>Contact</span>
+                            </Link>}
+
+                        <span style={{ marginBottom: "15px", fontSize: "20px" }} onClick={() => {
+                            setOpen(false);
+
+                            window.open('https://airbnbbucket.s3.us-east-2.amazonaws.com/Resume.pdf')
+                        }}>Resume</span>
+                    </Drawer>
+                </React.Fragment>
             </div>
             <div className="nav-right">
 
-                {isMobile ? <span className="hamburger" onClick={() => setDropdown(true)}>☰</span> : <><Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/about">
+                {isMobile ? undefined : <><Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/about">
                     <span>About</span>
                 </Link>
 

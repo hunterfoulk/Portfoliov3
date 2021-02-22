@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
+    "@material-ui/core": "^4.11.3",
     "@mdx-js/mdx": "^1.6.19",
     "@mdx-js/react": "^1.6.19",
     "gatsby": "^2.24.85",
@@ -22,6 +23,7 @@
     "gatsby-transformer-sharp": "^2.5.19",
     "godspeed": "^2.0.13",
     "ios-inner-height": "^1.1.1",
+    "material-ui-icons": "^1.0.0-beta.36",
     "node-sass": "^4.14.1",
     "prism-react-renderer": "^1.1.1",
     "prop-types": "^15.7.2",
