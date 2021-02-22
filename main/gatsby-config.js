@@ -8,12 +8,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: `gatsby-plugin-material-ui`,
       options: {
-        // Add any options here
+        stylesProvider: {
+          injectFirst: true,
+        },
       },
     },
-
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -46,15 +48,7 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-material-ui`,
-      options: {
-        stylesProvider: {
-          injectFirst: true,
-        },
-      },
-    },
-    `gatsby-plugin-styled-components`,
+
   ],
 
 }
