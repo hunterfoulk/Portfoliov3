@@ -40,7 +40,16 @@ module.exports = {
           camelCase: false,
         },
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
+    `gatsby-plugin-styled-components`,
   ],
 
 }
