@@ -15,8 +15,6 @@ export default function Footer() {
 
     const sendEmail = async (e) => {
         e.preventDefault();
-        // https://elegant-haibt-a61338.netlify.app/.netlify/functions/server/portfolio/sendemail
-        // http://localhost:9000/.netlify/functions/server/portfolio/sendemail
 
         const headers = {
             "Content-Type": "application/json",
