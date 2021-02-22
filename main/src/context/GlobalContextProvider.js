@@ -51,7 +51,7 @@ const initialState = {
                 frontEnd: "Create React App is my go to for creating scalable web applications and websites. I chose to stick with Reacts own Context API for fluent and clean state management and reuseable code. ",
                 backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with and makes it extremely easy to work with the AWS-SDK package.",
                 database: "I chose PostgreSQL to configure and store Springboards data while being hosted through a Azure PostgreSQL instance.",
-                video: "https://www.youtube.com/watch?v=-PWKD_FZB6c",
+                video: "https://www.youtube.com/watch?v=hhREaLWhNbA",
                 sourcecode: "https://github.com/hunterfoulk/springboard-client",
                 demolink: "https://springboards.netlify.app/"
             },
