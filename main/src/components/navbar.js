@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import "./navbar.scss"
 import Layout from "../components/layouts/layout"
-// import { Router, Link } from "@reach/router"
 import { Link } from "gatsby"
 import useClickOutside from "../components/useClickOutside"
 import { makeStyles } from '@material-ui/core/styles';

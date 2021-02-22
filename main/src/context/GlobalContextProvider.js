@@ -26,9 +26,9 @@ import fly1 from "../assets/fly1.jpg"
 import fly2 from "../assets/fly2.jpg"
 import fly3 from "../assets/fly3.jpg"
 import fly4 from "../assets/fly4.jpg"
-import spring1 from "../assets/spring1.JPG"
-import spring2 from "../assets/spring2.JPG"
-import spring3 from "../assets/spring3.JPG"
+import spring1 from "../assets/spring1.jpg"
+import spring2 from "../assets/spring2.jpg"
+import spring3 from "../assets/spring3.jpg"
 
 export const GlobalStateContext = React.createContext()
 export const GlobalDispatchContext = React.createContext()
