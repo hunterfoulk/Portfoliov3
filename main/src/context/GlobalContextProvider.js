@@ -30,6 +30,7 @@ import spring1 from "../assets/spring1.jpg"
 import spring2 from "../assets/spring2.jpg"
 import spring3 from "../assets/spring3.jpg"
 
+
 export const GlobalStateContext = React.createContext()
 export const GlobalDispatchContext = React.createContext()
 
