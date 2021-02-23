@@ -5,6 +5,8 @@ import { Link } from "gatsby"
 import useClickOutside from "../components/useClickOutside"
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
+import { MdKeyboardArrowDown } from 'react-icons/md';
+
 
 const useStyles = makeStyles({
     list: {
@@ -64,7 +66,7 @@ export default function Navbar() {
 
             <div className="nav-left">
                 {isMobile ? <span style={{ fontSize: "32px" }} className="hamburger" onClick={() => setOpen(true)}>☰</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
-                    <span>Hunter Foulk</span>
+                    <span style={{ color: "#000000bb" }}><span style={{ color: "black" }}>Hunter</span> Foulk</span>
                 </Link>}
 
                 <React.Fragment >
@@ -91,7 +93,7 @@ export default function Navbar() {
 
                             setOpen(false);
                         }}>About</span> : <Link style={{ textDecoration: "none", outline: "none", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/about">
-                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>About</span>
+                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>About </span>
                             </Link>}
                         {newPath === "/" ? <span style={{ marginBottom: "20px", fontSize: "20px", marginBottom: "20px", fontSize: "20px" }} onClick={() => {
                             window.scrollTo(5750, 5750);
@@ -112,24 +114,24 @@ export default function Navbar() {
             <div className="nav-right">
 
                 {isMobile ? undefined : <><Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/about">
-                    <span>About</span>
+                    <span>About<MdKeyboardArrowDown className="nav-icons" /></span>
                 </Link>
 
                     {newPath === "/" ? <span onClick={() => {
                         window.scrollTo(740, 740);
-                    }}>Projects</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
-                            <span>Projects</span>
+                    }}>Projects <MdKeyboardArrowDown className="nav-icons" /></span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
+                            <span>Projects <MdKeyboardArrowDown className="nav-icons" /></span>
                         </Link>}
 
                     {newPath === "/" ? <span onClick={() => {
                         window.scrollTo(3330, 3330);
-                    }}>Contact</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
-                            <span>Contact</span>
+                    }}>Contact <MdKeyboardArrowDown className="nav-icons" /></span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
+                            <span>Contact <MdKeyboardArrowDown className="nav-icons" /></span>
                         </Link>}
 
                     <span onClick={() => {
                         window.open('https://airbnbbucket.s3.us-east-2.amazonaws.com/Resume.pdf')
-                    }}>Resume</span>
+                    }}>Resume <MdKeyboardArrowDown className="nav-icons" /></span>
 
                 </>
 

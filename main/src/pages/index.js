@@ -44,7 +44,7 @@ const IndexPage = () => {
                 xlinkHref="#gentle-wave"
                 x="48"
                 y="0"
-                fill=" #2c2f33"
+                fill="#000000e0"
               />
             </g>
           </svg>
@@ -120,7 +120,7 @@ const IndexPage = () => {
                   xlinkHref="#gentle-wave"
                   x="48"
                   y="0"
-                  fill="#7289da"
+                  fill="#FFFFFF"
                 />
               </g>
             </svg>

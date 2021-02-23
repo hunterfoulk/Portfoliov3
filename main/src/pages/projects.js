@@ -122,7 +122,7 @@ export const Projects = ({ id }) => {
 
                         <div className="tech-labels-container">
                             {stack.map((stack, i) => (
-                                <div style={i === 0 ? { backgroundColor: "#7289da", color: "white" } : null} className="tech-label">{stack}</div>
+                                <div style={i === 0 ? { backgroundColor: "#037ded", color: "white" } : null} className="tech-label">{stack}</div>
                             ))}
                         </div>
 
@@ -153,7 +153,7 @@ export const Projects = ({ id }) => {
 
                             {project.demolink !== "" ? <a target="_blank"
                                 rel="noopener noreferrer"
-                                href={project.demolink} style={{ color: "#7289da", fontSize: "15px", textDecoration: "none", fontWeight: "bold" }}>Demo</a> : null}
+                                href={project.demolink} style={{ color: "#037ded", fontSize: "15px", textDecoration: "none", fontWeight: "bold" }}>Demo</a> : null}
 
                         </div>
 
