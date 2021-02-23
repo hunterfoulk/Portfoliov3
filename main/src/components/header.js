@@ -33,7 +33,7 @@ export default function Header() {
                     {newPath === "/" ? <span className="button-one" onClick={() => {
                         window.scrollTo(650, 650)
 
-                    }}>My Work</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a", marginBottom: "20px", fontSize: "20px" }} to="/">
+                    }}>My Work</span> : <Link style={{ textDecoration: "none", outline: "none", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/">
                             <span className="button-one">My Work</span>
                         </Link>}
 
