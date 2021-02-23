@@ -31,7 +31,7 @@ export default function Header() {
                 <span>I'm a Software Developer specialized in front end and back end development and have a passion for developing complex scalable web apps.</span>
                 <div className="header-button-container">
                     {newPath === "/" ? <span className="button-one" onClick={() => {
-                        window.scrollTo(650, 650)
+                        window.scrollTo(700, 700)
 
                     }}>My Work</span> : <Link style={{ textDecoration: "none", outline: "none", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/">
                             <span className="button-one">My Work</span>
