@@ -2,9 +2,11 @@ import React from 'react'
 import "./header.scss"
 import Layout from "../components/layouts/layout"
 import svgPic from "../assets/portsvg.svg"
+import Face from "../assets/face.jpeg"
 
 
 export default function Header() {
+
     return (
 
         <div className="header-container">
@@ -14,7 +16,7 @@ export default function Header() {
             </div>
             <div className="header-right">
                 <div className="image-container">
-                    <img src={svgPic} />
+                    <img src={Face} />
                 </div>
             </div>
         </div>
