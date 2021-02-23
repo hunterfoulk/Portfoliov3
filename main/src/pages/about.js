@@ -89,7 +89,7 @@ export default function About() {
                         <h1>Databases & Other</h1>
                         <div className="items-container">
                             {state.database.map((item, i) => (
-                                <div style={i === 0 ? { backgroundColor: "#7289da", color: "white" } : null} className="item">
+                                <div style={i === 0 ? { backgroundColor: "#037ded", color: "white" } : null} className="item">
                                     {item}
                                 </div>
 
