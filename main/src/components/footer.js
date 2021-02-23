@@ -64,7 +64,7 @@ export default function Footer() {
                         <p>I am always looking for new opportunities to learn and grow as a Software Developer feel free to contact me at any time or follow me at my socials! </p>
                     </div>
                     <div className="footer-left-bottom">
-                        <h1>Follow me at</h1>
+                        <h1>Connect with me</h1>
                         <div>
                             <a target="_blank"
                                 rel="noopener noreferrer"
