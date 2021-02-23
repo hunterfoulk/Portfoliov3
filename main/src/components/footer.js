@@ -38,8 +38,8 @@ export default function Footer() {
                 console.log("email has been sent");
                 setSuccess(true);
                 Swal.fire(
-                    'Good job!',
-                    'You clicked the button!',
+                    'Thanks for contacting me!',
+                    'I will get back to you as soon as i can!',
                     'success'
                 )
 
