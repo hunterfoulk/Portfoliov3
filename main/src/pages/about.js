@@ -64,7 +64,7 @@ export default function About() {
                         <h1>Front-End</h1>
                         <div className="items-container">
                             {state.frontend.map((item, i) => (
-                                <div style={i === 0 ? { backgroundColor: "#7289da", color: "white" } : null} className="item">
+                                <div style={i === 0 ? { backgroundColor: "#037ded", color: "white" } : null} className="item">
                                     {item}
                                 </div>
 
@@ -76,7 +76,7 @@ export default function About() {
                         <h1>Back-End</h1>
                         <div className="items-container">
                             {state.backend.map((item, i) => (
-                                <div style={i === 0 ? { backgroundColor: "#7289da", color: "white" } : null} className="item">
+                                <div style={i === 0 ? { backgroundColor: "#037ded", color: "white" } : null} className="item">
                                     {item}
                                 </div>
 
