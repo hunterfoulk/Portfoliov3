@@ -3,7 +3,7 @@
   // background-color: green;
   // margin: 150px 0px;
   margin-top: 160px;
-  margin-bottom: 50px;
+  margin-bottom: 110px;
   width: 65%;
   max-width: 1350px;
 
@@ -29,15 +29,18 @@
     width: 50%;
     // background-color: orange;
     .image-container {
-      width: 470px;
+      width: 370px;
       // height: 230px;
       // background-color: #2c2f33;
+      border-radius: 50%;
       img {
         // height: 100%;
         width: 100%;
-        margin-left: 20px;
+        // margin-left: 20px;
         position: relative;
         bottom: 20px;
+        // border-radius: 50%;
+        border-radius: 50%;
       }
     }
   }
@@ -53,14 +56,19 @@
   .header-container {
     width: 90%;
     // background-color: rgb(117, 117, 78);
-    justify-content: center;
-    margin-top: 120px;
-    margin-bottom: 50px;
+    // justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    flex-direction: column;
     .header-left {
       width: 90%;
+      display: flex;
+      align-items: center;
     }
     .header-right {
-      display: none;
+      // display: none;
+      margin-top: 50px;
     }
   }
 }
