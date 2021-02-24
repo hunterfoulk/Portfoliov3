@@ -66,7 +66,7 @@ export default function Navbar() {
 
             <div className="nav-left">
                 {isMobile ? <span style={{ fontSize: "32px" }} className="hamburger" onClick={() => setOpen(true)}>☰</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
-                    <span style={{ color: "#000000bb" }}><span style={{ color: "black" }}>Hunter</span> Foulk</span>
+                    <span style={{ color: "#000000bb" }}><span style={{ color: "#000000bb" }}>Hunter</span> Foulk</span>
                 </Link>}
 
                 <React.Fragment >

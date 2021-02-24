@@ -24,6 +24,7 @@
     color: #7289da;
     span {
       font-size: 22px;
+      color: #000000ab;
     }
   }
   .nav-left {
@@ -35,9 +36,6 @@
 
     span {
       cursor: pointer;
-    }
-    span:hover {
-      color: #5a70c0;
     }
   }
   .nav-right {
