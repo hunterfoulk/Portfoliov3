@@ -179,7 +179,7 @@ export const Projects = ({ id }) => {
                                     xlinkHref="#gentle-wave"
                                     x="48"
                                     y="0"
-                                    fill="#2c2f33"
+                                    fill="#000000e0"
                                 />
                             </g>
                         </svg>

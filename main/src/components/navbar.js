@@ -3,10 +3,10 @@ import "./navbar.scss"
 import Layout from "../components/layouts/layout"
 import { Link } from "gatsby"
 import useClickOutside from "../components/useClickOutside"
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-
+import Modal from '@material-ui/core/Modal';
 
 const useStyles = makeStyles({
     list: {
@@ -38,7 +38,13 @@ const useStyles = makeStyles({
     },
     links: {
         marginBottom: "10px"
-    }
+    },
+    modal: {
+        position: 'absolute',
+        width: 500,
+        backgroundColor: "white",
+        border: '2px solid #000',
+    },
 
 });
 export default function Navbar() {
@@ -47,6 +53,7 @@ export default function Navbar() {
     const [isMobile, conclusion] = useState(false)
     const [newPath, setNewpath] = useState("")
     const [open, setOpen] = useState(false)
+    const [modalOpen, setModalOpen] = useState(false)
     const ref = useRef();
     useClickOutside(ref, () => setDropdown(false));
 
@@ -57,7 +64,9 @@ export default function Navbar() {
         setNewpath(fullPath)
     }, [])
 
-
+    const handleClose = () => {
+        setModalOpen(false);
+    };
 
 
     return (
@@ -131,6 +140,7 @@ export default function Navbar() {
 
                     <span onClick={() => {
                         window.open('https://airbnbbucket.s3.us-east-2.amazonaws.com/Resume.pdf')
+                        // setModalOpen(true)
                     }}>Resume <MdKeyboardArrowDown className="nav-icons" /></span>
 
                 </>
@@ -140,6 +150,7 @@ export default function Navbar() {
 
 
             </div>
+
         </div>
 
 
