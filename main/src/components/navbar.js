@@ -7,6 +7,7 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import Modal from '@material-ui/core/Modal';
+import Resume from "../assets/Resume.pdf"
 
 const useStyles = makeStyles({
     list: {
@@ -115,7 +116,7 @@ export default function Navbar() {
                         <span style={{ marginBottom: "15px", fontSize: "20px" }} onClick={() => {
                             setOpen(false);
 
-                            window.open('https://airbnbbucket.s3.us-east-2.amazonaws.com/Resume.pdf')
+                            window.open(Resume)
                         }}>Resume</span>
                     </Drawer>
                 </React.Fragment>
@@ -139,7 +140,7 @@ export default function Navbar() {
                         </Link>}
 
                     <span onClick={() => {
-                        window.open('https://airbnbbucket.s3.us-east-2.amazonaws.com/Resume.pdf')
+                        window.open(Resume)
                         // setModalOpen(true)
                     }}>Resume <MdKeyboardArrowDown className="nav-icons" /></span>
 
