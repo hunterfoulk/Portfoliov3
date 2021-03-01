@@ -127,6 +127,12 @@
       width: 90%;
       display: flex;
       align-items: center;
+      .header-button-container {
+        display: flex;
+        // background-color: purple;
+        width: 100%;
+        justify-content: center;
+      }
     }
     .header-right {
       // display: none;
