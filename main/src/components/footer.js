@@ -61,7 +61,7 @@ export default function Footer() {
                 <div className="footer-left">
                     <div className="footer-left-top">
                         <h1>Thanks for stopping by</h1>
-                        <p>I am always looking for new opportunities to learn and grow as a Software Developer feel free to contact me at any time or follow me at my socials! </p>
+                        <p>I am always looking for new opportunities to learn and grow as a Software Developer. Feel free to contact me at any time or connect with me at my socials below! </p>
                     </div>
                     <div className="footer-left-bottom">
                         <h1>Connect with me</h1>
