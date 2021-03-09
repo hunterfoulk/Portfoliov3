@@ -34,15 +34,15 @@ export default function Header() {
                         window.scrollTo(700, 700)
 
                     }}>My Work</span> : <Link style={{ textDecoration: "none", outline: "none", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/">
-                            <span className="button-one">My Work</span>
-                        </Link>}
+                        <span className="button-one">My Work</span>
+                    </Link>}
 
                     {newPath === "/" ? <span className="button-two" onClick={() => {
-                        window.scrollTo(3600, 3600)
+                        window.scrollTo(4600, 4600)
 
                     }}>Contact</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a", marginBottom: "20px", fontSize: "20px" }} to="/">
-                            <span className="button-two">Contact</span>
-                        </Link>}
+                        <span className="button-two">Contact</span>
+                    </Link>}
                     {/* <button className="button-one">My Work</button> */}
                     {/* <button className="button-two">Contact</button> */}
                 </div>

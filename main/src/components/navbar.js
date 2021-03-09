@@ -87,8 +87,8 @@ export default function Navbar() {
                             window.scrollTo(0, 0)
                             setOpen(false);
                         }}>Home</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a", marginBottom: "20px", fontSize: "20px" }} to="/">
-                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>Home</span>
-                            </Link>}
+                            <span style={{ marginBottom: "20px", fontSize: "20px" }}>Home</span>
+                        </Link>}
 
 
 
@@ -96,22 +96,22 @@ export default function Navbar() {
                             window.scrollTo(730, 730)
                             setOpen(false);
                         }}>Projects</span> : <Link style={{ textDecoration: "none", outline: "none", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/">
-                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>Projects</span>
-                            </Link>}
+                            <span style={{ marginBottom: "20px", fontSize: "20px" }}>Projects</span>
+                        </Link>}
 
                         {newPath === "/about" ? <span style={{ marginBottom: "20px", fontSize: "20px", marginBottom: "20px", fontSize: "20px" }} onClick={() => {
 
                             setOpen(false);
                         }}>About</span> : <Link style={{ textDecoration: "none", outline: "none", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/about">
-                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>About </span>
-                            </Link>}
+                            <span style={{ marginBottom: "20px", fontSize: "20px" }}>About </span>
+                        </Link>}
                         {newPath === "/" ? <span style={{ marginBottom: "20px", fontSize: "20px", marginBottom: "20px", fontSize: "20px" }} onClick={() => {
                             window.scrollTo(5750, 5750);
                             setOpen(false);
 
                         }}>Contact</span> : <Link style={{ textDecoration: "none", outline: "none", fontSize: "20px", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/">
-                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>Contact</span>
-                            </Link>}
+                            <span style={{ marginBottom: "20px", fontSize: "20px" }}>Contact</span>
+                        </Link>}
 
                         <span style={{ marginBottom: "15px", fontSize: "20px" }} onClick={() => {
                             setOpen(false);
@@ -130,14 +130,14 @@ export default function Navbar() {
                     {newPath === "/" ? <span onClick={() => {
                         window.scrollTo(740, 740);
                     }}>Projects <MdKeyboardArrowDown className="nav-icons" /></span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
-                            <span>Projects <MdKeyboardArrowDown className="nav-icons" /></span>
-                        </Link>}
+                        <span>Projects <MdKeyboardArrowDown className="nav-icons" /></span>
+                    </Link>}
 
                     {newPath === "/" ? <span onClick={() => {
                         window.scrollTo(4330, 4330);
                     }}>Contact <MdKeyboardArrowDown className="nav-icons" /></span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
-                            <span>Contact <MdKeyboardArrowDown className="nav-icons" /></span>
-                        </Link>}
+                        <span>Contact <MdKeyboardArrowDown className="nav-icons" /></span>
+                    </Link>}
 
                     <span onClick={() => {
                         window.open(Resume)
