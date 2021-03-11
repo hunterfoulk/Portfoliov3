@@ -134,7 +134,7 @@ export default function Navbar() {
                     </Link>}
 
                     {newPath === "/" ? <span onClick={() => {
-                        window.scrollTo(4330, 4330);
+                        window.scrollTo(5330, 5330);
                     }}>Contact <MdKeyboardArrowDown className="nav-icons" /></span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
                         <span>Contact <MdKeyboardArrowDown className="nav-icons" /></span>
                     </Link>}
