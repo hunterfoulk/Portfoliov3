@@ -124,25 +124,25 @@ export default function Navbar() {
             <div className="nav-right">
 
                 {isMobile ? undefined : <><Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/about">
-                    <span>About<MdKeyboardArrowDown className="nav-icons" /></span>
+                    <span>About</span>
                 </Link>
 
                     {newPath === "/" ? <span onClick={() => {
                         window.scrollTo(740, 740);
-                    }}>Projects <MdKeyboardArrowDown className="nav-icons" /></span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
-                        <span>Projects <MdKeyboardArrowDown className="nav-icons" /></span>
+                    }}>Projects </span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
+                        <span>Projects </span>
                     </Link>}
 
                     {newPath === "/" ? <span onClick={() => {
                         window.scrollTo(5730, 5730);
-                    }}>Contact <MdKeyboardArrowDown className="nav-icons" /></span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
-                        <span>Contact <MdKeyboardArrowDown className="nav-icons" /></span>
+                    }}>Contact </span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
+                        <span>Contact </span>
                     </Link>}
 
                     <span onClick={() => {
                         window.open(Resume)
                         // setModalOpen(true)
-                    }}>Resume <MdKeyboardArrowDown className="nav-icons" /></span>
+                    }}>Resume</span>
 
                 </>
 

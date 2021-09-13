@@ -3,7 +3,7 @@
 .navbar {
   display: flex;
   width: 65%;
-  max-width: 1350px;
+  max-width: 1200px;
   // background-color: green;
   margin-top: 30px;
   font-family: "Roboto", sans-serif;
@@ -50,14 +50,14 @@
     span {
       // margin-right: 45px;
       cursor: pointer;
-      color: #8d8d8d;
+      color: #1b1b1b;
       .nav-icons {
         position: relative;
         top: 3.3px;
       }
     }
     span:hover {
-      text-decoration: underline;
+      color: #037ded;
     }
   }
 }

@@ -9,10 +9,11 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import { FaArrowRight } from 'react-icons/fa';
 import { FaArrowLeft } from 'react-icons/fa';
 import Navbar from "../components/navbar"
+import Stars from "../components/stars"
 import ReactPlayer from 'react-player'
 import { FaGithub } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
-
+import { MdOpenInNew } from 'react-icons/md';
 
 const Router = () => {
     return (
@@ -62,6 +63,7 @@ export const Projects = ({ id }) => {
 
             <div className="project-main">
                 <Navbar />
+                <Stars />
                 <div className="project-main-header">
                     <h1>{project.name}</h1>
                     <p>{project.description}</p>
@@ -87,35 +89,14 @@ export const Projects = ({ id }) => {
                     </Carousel>
 
                 </div>
-                <div className="project-wave-container">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 24 150 28"
-                        preserveAspectRatio="none"
-                        shapeRendering="auto"
-                        className="waves"
-                    >
-                        <defs>
-                            <path
-                                id="gentle-wave"
-                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                            />
-                        </defs>
-                        <g>
-                            <use
-                                className="p1 parallax"
-                                xlinkHref="#gentle-wave"
-                                x="48"
-                                y="0"
-                                fill="#f6f6f6"
-                            />
-                        </g>
-                    </svg>
-                </div>
+
                 <div className="project-about-section">
                     <div className="project-detail-header">
                         <h1>Details</h1>
-                        <p>{project.summary}</p>
+                        <p>{project.description}</p>
+                        <p style={{ marginTop: "50px" }}>{project.summary}</p>
+                        {project.summary2 ? <p style={{ marginTop: "50px" }}>{project.summary2}</p> : null}
+
                     </div>
                     <div className="project-tech-section">
                         <h1>Tech Stack</h1>
@@ -128,21 +109,11 @@ export const Projects = ({ id }) => {
 
 
                     </div>
-                    <div className="front-end-section">
-                        <h1>Front-End</h1>
-                        <p>{project.frontEnd}</p>
-                    </div>
-                    <div className="back-end-section">
-                        <h1>Back-End</h1>
-                        <p>{project.backEnd}</p>
-                    </div>
-                    <div className="database-section">
-                        <h1>Database</h1>
-                        <p>{project.database}</p>
-                    </div>
+
+
                     <div className="project-links-container">
 
-                        <h1>Source Code</h1>
+                        <h1>Resources</h1>
                         <div className="button-container">
                             <a target="_blank"
                                 rel="noopener noreferrer"
@@ -153,37 +124,13 @@ export const Projects = ({ id }) => {
 
                             {project.demolink !== "" ? <a target="_blank"
                                 rel="noopener noreferrer"
-                                href={project.demolink} style={{ color: "#037ded", fontSize: "15px", textDecoration: "none", fontWeight: "bold" }}>Demo</a> : null}
+                                href={project.demolink} style={{ color: "#1b1b1b", fontSize: "25px", textDecoration: "none", fontWeight: "bold" }}><MdOpenInNew style={{}} /></a> : null}
 
                         </div>
 
                     </div>
 
-                    <div className="project-video-wave-container">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 24 150 28"
-                            preserveAspectRatio="none"
-                            shapeRendering="auto"
-                            className="waves"
-                        >
-                            <defs>
-                                <path
-                                    id="gentle-wave"
-                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                                />
-                            </defs>
-                            <g>
-                                <use
-                                    className="p1 parallax"
-                                    xlinkHref="#gentle-wave"
-                                    x="48"
-                                    y="0"
-                                    fill="#000000e0"
-                                />
-                            </g>
-                        </svg>
-                    </div>
+
 
                     <div className="project-video-main">
                         <div className="project-video-header">

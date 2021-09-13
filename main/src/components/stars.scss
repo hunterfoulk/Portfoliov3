@@ -1,0 +1,103 @@
+:root {
+  --star-color: #4683b4cc;
+}
+
+$star-color: var(--star-color);
+
+@function stars($n) {
+  $value: "#{random(2000)}px #{random(2000)}px #{$star-color}";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(4000)}px #{random(4000)}px #{$star-color}";
+  }
+  @return unquote($value);
+}
+
+@mixin base {
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  &:after {
+    position: absolute;
+    top: 2000px;
+    background: transparent;
+  }
+}
+
+$stars-small: stars(1100);
+$stars-medium: stars(900);
+$stars-big: stars(700);
+
+$small-speed: 70s;
+$medium-speed: 125s;
+$big-speed: 200s;
+
+@media (min-width: 4000px) {
+  .stars-cont {
+    opacity: 0;
+  }
+}
+.stars-cont {
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  .stars {
+    z-index: -1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .stars > .small {
+    @include base;
+    width: 1px;
+    height: 1px;
+    box-shadow: $stars-small;
+    animation: float $small-speed linear infinite;
+    &:after {
+      width: 1px;
+      height: 1px;
+      box-shadow: $stars-small;
+    }
+  }
+
+  .stars > .medium {
+    @include base;
+    width: 2px;
+    height: 2px;
+    box-shadow: $stars-medium;
+    animation: float $medium-speed linear infinite;
+    &:after {
+      width: 2px;
+      height: 2px;
+      box-shadow: $stars-medium;
+    }
+  }
+
+  .stars > .big {
+    @include base;
+    width: 3px;
+    height: 3px;
+    box-shadow: $stars-big;
+    animation: float $big-speed linear infinite;
+    &:after {
+      width: 3px;
+      height: 3px;
+      box-shadow: $stars-big;
+    }
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}

@@ -3,6 +3,7 @@ import "./about.scss"
 import Navbar from "../components/navbar"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Stars from "../components/stars"
 import { GlobalDispatchContext, GlobalStateContext, } from "../context/GlobalContextProvider"
 
 
@@ -20,8 +21,8 @@ export default function About() {
         <div className="about-main">
             <Navbar />
             <Header />
-
-
+            <Stars />
+            {/* 
             <div className="about-wave-container">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +48,7 @@ export default function About() {
                     </g>
                 </svg>
 
-            </div>
+            </div> */}
             <div className="about-content-container">
                 <div className="about-section">
                     <div className="about-header">
@@ -104,7 +105,7 @@ export default function About() {
 
 
 
-                <div className="about-wave-container">
+                {/* <div className="about-wave-container">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 24 150 28"
@@ -128,7 +129,7 @@ export default function About() {
                             />
                         </g>
                     </svg>
-                </div>
+                </div> */}
 
                 <Footer />
             </div>

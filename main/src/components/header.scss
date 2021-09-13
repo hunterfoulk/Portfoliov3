@@ -2,10 +2,12 @@
 
 .header-container {
   display: flex;
-  // background-color: green;
+  // background-color: rgb(167, 228, 167);
   // margin: 150px 0px;
-  margin-top: 160px;
-  margin-bottom: 160px;
+  margin-top: 100px;
+  // margin-bottom: 160px;
+  // height: 100vh;
+  padding: 140px 0px;
   width: 65%;
   max-width: 1350px;
   font-family: "Roboto", sans-serif;
@@ -221,7 +223,7 @@
       width: 100%;
       .image-container {
         // width: 100%;
-        width: 65%;
+        width: 70%;
 
         height: 250px;
         // background-color: red;

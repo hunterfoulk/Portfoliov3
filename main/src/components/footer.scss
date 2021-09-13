@@ -44,11 +44,11 @@
   align-items: center;
   width: 100%;
   // background-color: #7289da;
-  background-color: white;
+  // background-color: white;
   .footer-content-container {
     display: flex;
     width: 65%;
-    max-width: 1350px;
+    max-width: 1250px;
     margin-top: 60px;
     margin-bottom: 60px;
     .footer-left {
@@ -156,7 +156,8 @@
         margin-top: 5px;
       }
       button:hover {
-        background-color: #e2e2e2;
+        background-color: #1b1b1b;
+        color: white;
       }
     }
   }
