@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import "./about.scss"
+import "./stars.scss"
 import Navbar from "../components/navbar"
 import Header from "../components/header"
 import Stars from "../components/stars"

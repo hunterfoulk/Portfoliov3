@@ -9,6 +9,7 @@ import Stars from "../components/stars"
 import Footer from "../components/footer"
 import './pages.scss'
 import './projects.scss'
+import './stars.scss'
 import "../components/footer.scss"
 import { GlobalDispatchContext, GlobalStateContext, } from "../context/GlobalContextProvider"
 import ScrollAnimation from 'react-animate-on-scroll';
