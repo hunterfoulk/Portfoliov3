@@ -5,8 +5,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layouts/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
-import Footer from "../components/footer"
 import Stars from "../components/stars"
+import Footer from "../components/footer"
 import './pages.scss'
 import './projects.scss'
 import "../components/footer.scss"

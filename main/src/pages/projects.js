@@ -2,8 +2,7 @@ import React, { useState, useEffect, useContext } from "react"
 import { Router as MyRouter } from "@reach/router"
 import Layout from "../components/layouts/layout"
 import { GlobalDispatchContext, GlobalStateContext, } from "../context/GlobalContextProvider"
-import AliceCarousel from 'react-alice-carousel';
-import "./projects.scss"
+
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import { FaArrowRight } from 'react-icons/fa';
@@ -14,6 +13,8 @@ import ReactPlayer from 'react-player'
 import { FaGithub } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
 import { MdOpenInNew } from 'react-icons/md';
+import AliceCarousel from 'react-alice-carousel';
+import "./projects.scss"
 
 const Router = () => {
     return (
