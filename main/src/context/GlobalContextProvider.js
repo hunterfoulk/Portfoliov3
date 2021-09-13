@@ -33,7 +33,7 @@ import con1 from "../assets/con1.jpg"
 import con2 from "../assets/con2.jpg"
 import con3 from "../assets/con3.jpg"
 import apex1 from "../assets/newheader.png"
-import pool1 from "../assets/pool1.png"
+import pool1 from "../assets/pool1.PNG"
 import pool3 from "../assets/pool3.jpg"
 import pool2 from "../assets/mock2.jpg"
 
