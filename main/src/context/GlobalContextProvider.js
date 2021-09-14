@@ -61,7 +61,7 @@ const initialState = {
                 database: "I chose PostgreSQL to configure and store Springboards data while being hosted through a Azure PostgreSQL instance.",
                 video: "https://www.youtube.com/watch?v=hhREaLWhNbA",
                 sourcecode: "https://github.com/hunterfoulk/springboard-client",
-                demolink: "https://springboards.netlify.app/"
+                demolink: "https://apex-client-he15s527j-hunterfoulk.vercel.app/"
             },
             {
                 id: 1,
