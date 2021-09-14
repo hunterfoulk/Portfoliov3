@@ -78,7 +78,7 @@ const initialState = {
                 database: "I chose PostgreSQL to configure and store Springboards data while being hosted through a Azure PostgreSQL instance.",
                 video: "https://www.youtube.com/watch?v=hhREaLWhNbA",
                 sourcecode: "https://github.com/hunterfoulk/springboard-client",
-                demolink: "https://springboards.netlify.app/"
+                demolink: "https://www.keithphillingane.com/"
             },
             {
                 id: 2,
@@ -94,7 +94,7 @@ const initialState = {
                 database: "I chose PostgreSQL to configure and store Springboards data while being hosted through a Azure PostgreSQL instance.",
                 video: "https://www.youtube.com/watch?v=hhREaLWhNbA",
                 sourcecode: "https://github.com/hunterfoulk/springboard-client",
-                demolink: "https://springboards.netlify.app/"
+                demolink: "https://piranhapools.com/"
             },
             {
                 id: 3,
