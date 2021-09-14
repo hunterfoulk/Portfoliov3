@@ -117,14 +117,14 @@ export const Projects = ({ id }) => {
                         <div className="button-container">
                             <a target="_blank"
                                 rel="noopener noreferrer"
-                                href="https://github.com/hunterfoulk" style={{ color: "black" }}><FaGithub /></a>
+                                href="https://github.com/hunterfoulk" ><FaGithub /></a>
                             <a target="_blank"
                                 rel="noopener noreferrer"
-                                href={project.video} style={{ color: "#FF0000" }}><FaYoutube /></a>
+                                href={project.video} ><FaYoutube /></a>
 
                             {project.demolink !== "" ? <a target="_blank"
                                 rel="noopener noreferrer"
-                                href={project.demolink} style={{ color: "#1b1b1b", fontSize: "25px", textDecoration: "none", fontWeight: "bold" }}><MdOpenInNew style={{}} /></a> : null}
+                                href={project.demolink} style={{ fontSize: "18px", textDecoration: "none", fontWeight: "bold" }}>Website</a> : null}
 
                         </div>
 

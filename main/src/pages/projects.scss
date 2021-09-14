@@ -565,19 +565,21 @@
       .button-container {
         display: flex;
         margin-top: 15px;
+        transition: 0.2s;
 
         a {
           display: flex;
           align-items: center;
           justify-content: center;
           color: #1b1b1b;
-          margin-right: 15px;
-          font-size: 25px;
+          margin-right: 20px;
+          font-size: 26px;
           font-family: "Roboto", sans-serif;
           // box-shadow: 3px 6px 11px -7.5px rgba(0, 0, 0, 0.86);
           cursor: pointer;
           outline: none;
           margin-top: 5px;
+          transition: 0.1.5s;
         }
 
         a:hover {
