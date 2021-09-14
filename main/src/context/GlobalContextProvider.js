@@ -33,6 +33,8 @@ import con1 from "../assets/con1.jpg"
 import con2 from "../assets/con2.jpg"
 import con3 from "../assets/con3.jpg"
 import apex1 from "../assets/newheader.png"
+import apex2 from "../assets/fit12.png"
+import apex3 from "../assets/apex3.png"
 import pool1 from "../assets/pool1.jpg"
 import pool3 from "../assets/pool3.jpg"
 import pool2 from "../assets/mock2.jpg"
@@ -53,7 +55,7 @@ const initialState = {
                 thumbnail: apex1,
                 stack: ["React", "Typescript", "NodeJS", "MySql"],
                 stackList: ["NextJs", "Typescript", "TailwindCSS", "NodeJS", "Express", "Azure", "MySql", "Heroku", "Netlify"],
-                slides: [apex1, apex1, apex1],
+                slides: [apex1, apex3, apex2],
                 frontEnd: "Create React App is my go to for creating scalable web applications and websites. I chose to stick with Reacts own Context API for fluent and clean state management and reuseable code. ",
                 backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with and makes it extremely easy to work with the AWS-SDK package.",
                 database: "I chose PostgreSQL to configure and store Springboards data while being hosted through a Azure PostgreSQL instance.",
