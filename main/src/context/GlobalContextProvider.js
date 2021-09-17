@@ -59,9 +59,9 @@ const initialState = {
                 frontEnd: "Create React App is my go to for creating scalable web applications and websites. I chose to stick with Reacts own Context API for fluent and clean state management and reuseable code. ",
                 backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with and makes it extremely easy to work with the AWS-SDK package.",
                 database: "I chose PostgreSQL to configure and store Springboards data while being hosted through a Azure PostgreSQL instance.",
-                video: "https://www.youtube.com/watch?v=hhREaLWhNbA",
+                video: "https://www.youtube.com/watch?v=VelICmOiIMw",
                 sourcecode: "https://github.com/hunterfoulk/springboard-client",
-                demolink: "https://apex-client-he15s527j-hunterfoulk.vercel.app/"
+                demolink: "https://apex-client.vercel.app/"
             },
             {
                 id: 1,
@@ -76,7 +76,7 @@ const initialState = {
                 frontEnd: "Create React App is my go to for creating scalable web applications and websites. I chose to stick with Reacts own Context API for fluent and clean state management and reuseable code. ",
                 backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with and makes it extremely easy to work with the AWS-SDK package.",
                 database: "I chose PostgreSQL to configure and store Springboards data while being hosted through a Azure PostgreSQL instance.",
-                video: "https://www.youtube.com/watch?v=hhREaLWhNbA",
+                video: "https://www.youtube.com/watch?v=4tDlM86YawA",
                 sourcecode: "https://github.com/hunterfoulk/springboard-client",
                 demolink: "https://www.keithphillingane.com/"
             },
@@ -92,7 +92,7 @@ const initialState = {
                 frontEnd: "Create React App is my go to for creating scalable web applications and websites. I chose to stick with Reacts own Context API for fluent and clean state management and reuseable code. ",
                 backEnd: "NodeJS with Express is what I chose for this application and like many other of my applications because of how simple and easy it is to spin up a server and create routes for your front-end to communicate with and makes it extremely easy to work with the AWS-SDK package.",
                 database: "I chose PostgreSQL to configure and store Springboards data while being hosted through a Azure PostgreSQL instance.",
-                video: "https://www.youtube.com/watch?v=hhREaLWhNbA",
+                video: "https://www.youtube.com/watch?v=L0Xh_0i-0sE",
                 sourcecode: "https://github.com/hunterfoulk/springboard-client",
                 demolink: "https://piranhapools.com/"
             },

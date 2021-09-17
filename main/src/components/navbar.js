@@ -9,29 +9,30 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import Modal from '@material-ui/core/Modal';
 import Resume from "../assets/Resume.pdf"
 import Fade from 'react-reveal/Fade';
+import MenuIcon from '@material-ui/icons/Menu';
+
 
 const useStyles = makeStyles({
     list: {
-        width: "220px",
+        width: "280px",
         display: "flex",
 
-        backgroundColor: "rgb(248, 248, 248)",
+        backgroundColor: "white",
 
 
     },
     fullList: {
         width: '220px',
         display: "flex",
-        backgroundColor: "rgb(248, 248, 248)",
-        background: "rgb(248, 248, 248)",
+        backgroundColor: "white",
         // padding: "5px",
         marginLeft: "5px",
         marginTop: "5px"
 
     },
     paper: {
-        background: "rgb(248, 248, 248)",
-        width: "200px",
+        background: "white",
+        width: "260px",
         display: "flex",
         alignItems: "center",
         padding: "10px"
@@ -39,7 +40,7 @@ const useStyles = makeStyles({
 
     },
     links: {
-        marginBottom: "10px"
+        marginBottom: "20px"
     },
     modal: {
         position: 'absolute',
@@ -76,7 +77,7 @@ export default function Navbar() {
             <div className="navbar">
 
                 <div className="nav-left">
-                    {isMobile ? <span style={{ fontSize: "32px" }} className="hamburger" onClick={() => setOpen(true)}>☰</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
+                    {isMobile ? <MenuIcon className="hamburger" onClick={() => setOpen(true)} /> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a" }} to="/">
                         <span style={{ color: "#000000bb" }}><span style={{ color: "#000000bb" }}>Hunter</span> Foulk</span>
                     </Link>}
 
@@ -84,37 +85,37 @@ export default function Navbar() {
 
                         <Drawer classes={{ paper: classes.paper }} anchor="left" open={open} onClose={() => setOpen(false)}>
 
-                            {newPath === "/" ? <span style={{ marginBottom: "20px", fontSize: "20px", marginBottom: "20px", fontSize: "20px" }} onClick={() => {
+                            {newPath === "/" ? <span style={{ fontSize: "20px", marginBottom: "25px", fontSize: "20px" }} onClick={() => {
                                 window.scrollTo(0, 0)
                                 setOpen(false);
-                            }}>Home</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a", marginBottom: "20px", fontSize: "20px" }} to="/">
+                            }}>Home</span> : <Link style={{ textDecoration: "none", outline: "none", color: "#23272a", marginBottom: "25px", fontSize: "20px" }} to="/">
                                 <span style={{ marginBottom: "20px", fontSize: "20px" }}>Home</span>
                             </Link>}
 
 
 
-                            {newPath === "/" ? <span style={{ marginBottom: "20px", fontSize: "20px", marginBottom: "20px", fontSize: "20px" }} onClick={() => {
+                            {newPath === "/" ? <span style={{ marginBottom: "25px", fontSize: "20px", fontSize: "20px" }} onClick={() => {
                                 window.scrollTo(730, 730)
                                 setOpen(false);
                             }}>Projects</span> : <Link style={{ textDecoration: "none", outline: "none", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/">
                                 <span style={{ marginBottom: "20px", fontSize: "20px" }}>Projects</span>
                             </Link>}
 
-                            {newPath === "/about" ? <span style={{ marginBottom: "20px", fontSize: "20px", marginBottom: "20px", fontSize: "20px" }} onClick={() => {
+                            {newPath === "/about" ? <span style={{ marginBottom: "25px", fontSize: "20px", fontSize: "20px" }} onClick={() => {
 
                                 setOpen(false);
-                            }}>About</span> : <Link style={{ textDecoration: "none", outline: "none", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/about">
+                            }}>About</span> : <Link style={{ textDecoration: "none", outline: "none", color: "black", marginBottom: "25px", fontSize: "20px" }} to="/about">
                                 <span style={{ marginBottom: "20px", fontSize: "20px" }}>About </span>
                             </Link>}
-                            {newPath === "/" ? <span style={{ marginBottom: "20px", fontSize: "20px", marginBottom: "20px", fontSize: "20px" }} onClick={() => {
+                            {newPath === "/" ? <span style={{ fontSize: "20px", marginBottom: "25px", fontSize: "20px" }} onClick={() => {
                                 window.scrollTo(5750, 5750);
                                 setOpen(false);
 
-                            }}>Contact</span> : <Link style={{ textDecoration: "none", outline: "none", fontSize: "20px", color: "black", marginBottom: "20px", fontSize: "20px" }} to="/">
-                                <span style={{ marginBottom: "20px", fontSize: "20px" }}>Contact</span>
+                            }}>Contact</span> : <Link style={{ textDecoration: "none", outline: "none", fontSize: "20px", color: "black", fontSize: "20px" }} to="/">
+                                <span style={{ marginBottom: "25px", fontSize: "20px" }}>Contact</span>
                             </Link>}
 
-                            <span style={{ marginBottom: "15px", fontSize: "20px" }} onClick={() => {
+                            <span style={{ marginBottom: "25px", fontSize: "20px" }} onClick={() => {
                                 setOpen(false);
 
                                 window.open(Resume)
