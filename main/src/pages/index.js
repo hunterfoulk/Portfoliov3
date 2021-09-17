@@ -45,7 +45,7 @@ const IndexPage = () => {
 
             {state.projects.filter(x => x.id < 3).map((project, i) => (
               <Pulse duration={500}>
-                <div className="project" key={i}>
+                <div className={i == 1 ? "project-two" : "project"} key={i}>
                   <div className="project-image-container">
                     <img src={project.thumbnail} />
                   </div>
