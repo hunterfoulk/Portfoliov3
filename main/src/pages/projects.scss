@@ -61,6 +61,7 @@
 
     .bottom-header {
       margin-bottom: 8px;
+      padding: 0px 10px;
       span {
         color: #1b1b1b;
         font-size: 35px;
@@ -830,6 +831,10 @@
 
 @media (max-width: 760px) {
   .projects-main {
+    .bottom-header {
+      display: flex;
+      justify-content: flex-end;
+    }
     .bottom-collection {
       .bottom-projects-container {
         // background-color: yellow;
