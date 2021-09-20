@@ -87,7 +87,7 @@ const initialState = {
                 stackList: ["HTML", "JavaScript", "CSS", "NodeJS", "Express", "MySql"],
                 slides: [pool1, pool2, pool3],
                 video: "https://www.youtube.com/watch?v=L0Xh_0i-0sE",
-                sourcecode: "https://github.com/hunterfoulk/springboard-client",
+                sourcecode: "",
                 demolink: "https://piranhapools.com/"
             },
             {
